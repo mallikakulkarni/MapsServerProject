@@ -1,0 +1,10 @@
+//
+   Created by mallika on 10/14/15.
+
+extends layout
+block content
+    #google-map-container
+    script(type="text/javascript" src="/javascripts/maps.js")
+    script(type="text/javascript").
+        google.maps.event.addDomListener(window, 'load', initMap);
+        var locationData = !{JSON.stringify(locationData)};
